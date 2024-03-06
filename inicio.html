@@ -124,7 +124,7 @@
 </style>
 
 <!--MENÚ-->
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background: linear-gradient(to bottom, #ffb3c1, #ff8fa3); padding: 10px; font-weight: 600;">
+<nav class="navbar navbar-expand-md navbar-dark fw-bold" style="background: linear-gradient(to bottom, #c9184a, #ff8fa3); padding: 10px;">
     <div class="container-fluid d-flex align-items-center justify-content-between">
         <img class="d-block mx-auto mb-4" src="./img/logo_zai_inicio.png" alt="" width="200" height="120">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,10 +136,18 @@
                     <a class="nav-link fs-5 active" style="color: #FFF;" aria-current="page" href="./inicio.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-5" style="color: #fff;" href="https://wa.link/osoqnn">Contacto</a>
+                    <a class="nav-link fs-5" style="color: #fff;" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" style="color: #fff;" href="#ver_contenido">Colaboraciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" style="color: #fff;" href="#contenidox">Contenido</a>
                 </li>
             </ul>
         </div>
+        <!-- Nuevo contenedor para el botón de WhatsApp -->
+        
     </div>
 </nav>
 <!--FIN MENÚ-->
@@ -162,60 +170,47 @@
 <!--FIN HERO-->
 <hr class="container " style="border: 5px solid white;">
 <!--HEADER-->
-<header class="pb-3 p-3" style="background-color: #ff8fa3; padding: 25px;">
-    <span id="seccionEventos" class="display-1 fw-bold" style="color:  #fff;">Hola, soy Zai!🤍</span>
+<header class="p-5" style="background-color: #ffb3c1; padding: 25px;">
+    <span id="contacto" class="display-1 fw-bold text-center" style="color:  #fff;">Hola, soy Zai!🤍</span>
 </header>
 <!--FIN HEADER-->
 
-<section style="background-color: #ff8fa3; padding: 100px;">
-    <div class="content-section">
-        <div class="text-container">
-          <h2 style="color: #fff;">Creadora de contenido en Tik Tok e Instagram tengo 18 años, estudiante de administración de empresas del entretenimiento, soy muy expresiva, carismática  y siempre doy lo mejor de mi.
+<section style="background: linear-gradient(to bottom, #ff8fa3, #ffb3c1, #ffb3c1); padding: 100px;" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-container">
+                    <h2 class="text-center" style="color: #fff;">Creadora de contenido en Tik Tok e Instagram tengo 18 años, estudiante de administración de empresas del entretenimiento, soy muy expresiva, carismática y siempre doy lo mejor de mí. Me gusta transmitir emociones con todo el mundo y compartir mis experiencias.</h2>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg rounded-5 mt-5" style="background: linear-gradient(to bottom, #075e54, #128C7E);" type="button">WhatsApp</button> <!--falto poner a href  https://wa.link/osoqnn-->
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-danger btn-lg rounded-5 mt-5" style="background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);" type="button">Instagram</button>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-dark btn-lg rounded-5 mt-5" type="button">Tik tok</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="./img/zai_x.jpg" alt="Descripción de la imagen" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
 
-        Me gusta transmitir emociones con todo el mundo y compartir mis experiencias.</h2>
-        </div>
-        <div class="image-container">
-          <img src="./img/zai_x.jpg" alt="Descripción de la imagen">
-        </div>
-      </div>
-</section>  
 <hr class="container " style="border: 5px solid white;">
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Obtener referencia al botón y a la sección de eventos
-    var btnVerEventos = document.getElementById('btnVerEventos');
-    var seccionEventos = document.getElementById('seccionEventos');
-
-    // Agregar evento click al botón
-    btnVerEventos.addEventListener('click', function() {
-        // Calcular la posición de la sección de eventos
-        var sectionPosition = seccionEventos.offsetTop;
-
-        // Desplazar la página suavemente hacia la sección de eventos
-        window.scrollTo({
-            top: sectionPosition,
-            behavior: 'smooth'
-        });
-    });
-});
-
-function scrollToContent() {
-    // Obtenemos el elemento al que queremos desplazarnos
-    var header = document.getElementById('ver_contenido');
-    
-    // Realizamos el desplazamiento suave
-    header.scrollIntoView({ behavior: 'smooth' });
-}
-
-</script>
 
 <!--HEADER-->
-<header class="pb-3" style="background-color: #ff8fa3; padding: 25px;" name="ver_contenido" id="ver_contenido">
+<header class="pb-3" style="background: linear-gradient(to right, #c9184a, #ff8fa3, #ff8fa3); padding: 25px;" name="ver_contenido" id="ver_contenido">
   <span class="display-1 fw-bold" style="color:  #fff ;">Colaboraciones</span>
 </header>
 <!--FIN HEADER-->
 
-<div class="iphone-container" style="margin: 0 20px;">
+<div class="iphone-container p-5" style=" background: linear-gradient(to right, #c9184a, #ff8fa3, #ff8fa3);">
     <div class="iphone">
         <div class="video">
             <!-- Aquí va tu primer video -->
@@ -247,7 +242,13 @@ function scrollToContent() {
 
 <hr class="container " style="border: 5px solid white;">
 
-<section style="background-color: #ff8fa3;">
+<!--HEADER-->
+<header class="pb-3" style="background-color: #ff8fa3; padding: 25px;" id="contenidox">
+    <span class="display-1 fw-bold" style="color:  #fff ;" id="contenidox"></span>
+  </header>
+  <!--FIN HEADER-->
+
+<section class="p-3" style="background-color: #ff8fa3;">
 <b><div style="text-align: center; color: #fff; font-size: 48px;">Hagamos crecer tu negocio junt@s</div></b>
 <div style="text-align: center; color: #fff; font-size: 24px;">
     <ul style="padding-left: 0; list-style: none;">
@@ -259,9 +260,7 @@ function scrollToContent() {
 </div>
 </section>
 
-
-
-<section style="text-align: center; color: #fff; font-size: 24px;" class="mb-3">
+<section class="p-5" style="text-align: center; color: #fff; font-size: 24px;" class="mb-3">
     <b><div style="text-align: center; color: #fff; font-size: 48px;">Paquetes</div></b>
 
     <!-- Primera sección -->
@@ -280,20 +279,59 @@ function scrollToContent() {
 
 
  <!-- Footer -->
-<footer class="text-white" style="font-size: 18px;">
-    <div class="text-center p-3" style="background: black;">
-     ©2024 Zaira Escamilla</a> 
-    <a class="text-white" href="https://www.facebook.com/codecanvasgdl?mibextid=PtKPJ9" style="text-decoration: none;">- Con tecnologia de <b>CodeCanvas</b></a>
+ <footer style="background: linear-gradient(to top, #c9184a, #ff8fa3); color: white; padding: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>©2024 Zaira Escamilla</p>
+            </div>
+            <div class="col-md-6">
+                <p>Con tecnología de <b>CodeCanvas</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a class="text-white" href="./inicio.html">Inicio</a></li>
+                    <li class="mb-2"><a class="text-white" href="#contacto">Contacto</a></li>
+                    <li class="mb-2"><a class="text-white" href="#ver_contenido">Colaboraciones</a></li>
+                    <li><a class="text-white" href="#contenidox">Contenido</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
 
 
+<!-- Fin Footer -->
 
-
-
-<!-- <div class="footer__bottom no-margin centrar-texto">
-    <p>copyright &copy; 2024 Area 52, designed by <span>DIST</span></p>
-</div>   -->
-
+<!-- SECCION DE SCRIPTS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('a[href^="#"]');
+    
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    });
+    
+    function scrollToContent() {
+        // Obtenemos el elemento al que queremos desplazarnos
+        var header = document.getElementById('ver_contenido');
+        
+        // Realizamos el desplazamiento suave
+        header.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    </script>
 </body>
 </html>
